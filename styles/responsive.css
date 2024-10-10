@@ -4,13 +4,82 @@
   .navbar {
     padding: 30px 100px;
   }
+  .filter-part {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .featured-car-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featured-car-item-one {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .client-section,
+  .footer-section .contact-us {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
-@media screen and (max-width: 1232px) {
+@media screen and (max-width: 962px) {
   .navbar {
     padding: 30px 20px;
   }
   .header-content {
     width: 90%;
+  }
+  .filter-part-one {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .car-service-part {
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .car-section-part {
+    flex-direction: column;
+  }
+  .car-details {
+    margin-left: 0px;
+    text-align: center;
+  }
+  .footer-section .contact-us {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 892px) {
+  .featured-car-grid {
+    margin: 0px 20px;
+  }
+  .client-section {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .brands-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .footer-section .contact-us {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-sec-part .newsletter {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .news-btn-email {
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -67,6 +136,71 @@
     padding: 10px 25px;
     font-size: 14px;
   }
+
+  .featured-car-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .client-card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .client-section {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .client-details {
+    width: 100%;
+    padding: 15px;
+  }
+  .car-details p {
+    font-size: 14px;
+  }
+  .car-details h3 {
+    font-size: 22px;
+  }
+  .footer-section .contact-us {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .filter-part {
+    flex-direction: column;
+  }
+  .filter-btn {
+    justify-content: center;
+  }
+  .filter-part-one {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .filter-group {
+    margin-right: 0;
+  }
+  .filter-group label {
+    text-align: center;
+  }
+  .New-car-section h1 {
+    margin-bottom: 0;
+  }
+  .car-section-part img {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 548px) {
+  .top-brand {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-section .contact-us {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 500px) {
   .header {
@@ -78,5 +212,40 @@
   .header-content p {
     font-size: 14px;
     padding: 5px 10px;
+  }
+  .featured-car-img,
+  .featured-car-card-part-one {
+    width: 100%;
+  }
+  .car-details {
+    margin-left: 10px;
+  }
+  .featured-car-sec,
+  .brands-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .featured-car-title,
+  .car-service-part {
+    padding-bottom: 30px;
+  }
+  .car-section-part img {
+    height: 200px;
+  }
+  #backToTopBtn {
+    right: 10px;
+
+    height: 30px;
+    width: 30px;
+  }
+  .filter-part {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 332px) {
+  .filter-part {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
