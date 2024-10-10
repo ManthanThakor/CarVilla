@@ -395,17 +395,23 @@
     color: white;
   }
 }
-/* ===== contact us ===== */
+/* ===== Brand  ===== */
 
 .brands-section {
   background-color: #fff;
   padding: 80px 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
-.partners img {
+
+.brands-section img {
   margin: 0 15px;
   vertical-align: middle;
+  object-fit: cover;
 }
+
+/* ===== contact us ===== */
+
 .footer {
   background-color: #2c2e4a;
   color: #fff;
@@ -448,4 +454,5 @@
   color: #fff;
   cursor: pointer;
 }
+
 /* ===== Featured Car ===== */
