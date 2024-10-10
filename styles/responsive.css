@@ -1,0 +1,49 @@
+/* ===== Responsive Styles ===== */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    z-index: 99;
+  }
+
+  .nav-link-part {
+    padding: 15px 0;
+    width: 100%;
+    color: var(--white);
+  }
+
+  .header-content h1 {
+    font-size: 28px;
+  }
+
+  .header-content p {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+
+  .header-content button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}
