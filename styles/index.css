@@ -54,6 +54,7 @@
 }
 .navbar a:hover {
   color: #6c63ff;
+  cursor: pointer;
 }
 
 /* ===== Toggle Button ===== */
@@ -144,6 +145,10 @@
   border-radius: 5px;
   cursor: pointer;
 }
+.search-button:hover {
+  cursor: pointer;
+  background-color: #03086877;
+}
 .filter-group select {
   width: 200px;
   padding: 10px;
@@ -164,7 +169,11 @@
   gap: 20px;
   justify-content: center;
   margin-top: 30px;
+  padding-bottom: 50px;
+  border-bottom: solid 1px #000000;
+  box-shadow: 0px 15px 15px -15px #1a1a1a;
 }
+
 .service-card {
   gap: 15px;
   flex-direction: column;
@@ -177,11 +186,13 @@
   padding: 20px;
   text-align: center;
   width: 250px;
+  transition: all 0.3s ease-in-out;
 }
 
 .service-card i {
   font-size: 40px;
   margin-bottom: 20px;
+
   color: #a3a3a3;
 }
 
@@ -210,6 +221,8 @@
 }
 .service-card:hover {
   background-color: #3a3ae4;
+  cursor: pointer;
+
   .underline {
     background-color: var(--white);
   }
@@ -219,3 +232,169 @@
     color: var(--white);
   }
 }
+
+/* ===== Featured Car ===== */
+.featured-car-sec {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.featured-car-dis {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.featured-car-title {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.featured-car-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #3f51b5;
+  margin: 10px auto 0;
+}
+
+.featured-car-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 0px 80px;
+  width: fit-content;
+}
+
+.car-item {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.featured-car-card-part-one {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+
+  width: 250px;
+}
+
+.featured-car-img {
+  width: 250px;
+  height: 200px;
+  object-fit: contain;
+  object-position: center;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+  mix-blend-mode: darken;
+}
+
+.car-details {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.car-details-one {
+  font-size: 14px;
+  color: #777;
+  padding-left: 5px;
+}
+
+.car-details-two {
+  font-size: 14px;
+  color: #777;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.featured-car-card-part-two {
+  padding-left: 5px;
+}
+
+.car-name {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+  padding-top: 10px;
+}
+
+.car-price {
+  font-size: 16px;
+  color: #474747;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.car-dis {
+  color: #333;
+  font-size: 14px;
+}
+
+/* ===== our client ===== */
+
+.client-section {
+  margin: 0 auto;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+}
+.client-section h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.client-section-underline {
+  width: 50px;
+  height: 3px;
+  background-color: #333;
+  margin: 0 auto 40px;
+}
+.client-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.client-details {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  text-align: center;
+}
+
+.client-details img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.client-review {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.client-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+.client-location {
+  color: #777;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.client-details:hover {
+  background-color: #1e90ff;
+  cursor: pointer;
+  .client-review,
+  .client-name,
+  .client-location {
+    color: white;
+  }
+}
+/* ===== contact us ===== */
+
+/* ===== Featured Car ===== */
