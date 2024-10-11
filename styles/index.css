@@ -180,8 +180,8 @@ html {
   border-radius: 2ch;
 }
 .filter-group select option[selected] {
-  background-color: #414141; /* Change the background of the selected option */
-  color: white; /* Change text color */
+  background-color: #414141;
+  color: white;
 }
 .filter-group label {
   margin-bottom: 5px;
@@ -618,7 +618,7 @@ html {
 /* ===== back to top ===== */
 
 #backToTopBtn {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
   bottom: 10px;
   border-radius: 50%;
@@ -635,6 +635,6 @@ html {
 }
 
 #backToTopBtn:hover {
-  background-color: #011033; /* Darker shade on hover */
-  transform: translateY(-5px); /* Slight upward movement */
+  background-color: #011033;
+  transform: translateY(-5px);
 }
