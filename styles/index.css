@@ -301,8 +301,11 @@ html {
 .featured-car-card-part-one {
   border: 1px solid #ddd;
   border-radius: 5px;
-
   width: 250px;
+}
+.featured-car-card-part-one:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .featured-car-img {
