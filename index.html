@@ -37,12 +37,12 @@
         </div>
         <div class="toggle-btn" onclick="toggleMenu()">☰</div>
         <div class="nav-links" id="nav-links">
-          <a href="#" class="nav-link-part">HOME</a>
-          <a href="#" class="nav-link-part">SERVICE</a>
-          <a href="#" class="nav-link-part">FEATURED CARS</a>
-          <a href="#" class="nav-link-part">NEW CARS</a>
-          <a href="#" class="nav-link-part">BRANDS</a>
-          <a href="#" class="nav-link-part">CONTACT</a>
+          <a href="index.html" class="nav-link-part">HOME</a>
+          <a href="#car-service-part-sec" class="nav-link-part">SERVICE</a>
+          <a href="#featured-car-sec" class="nav-link-part">FEATURED CARS</a>
+          <a href="#New-car-section" class="nav-link-part">NEW CARS</a>
+          <a href="#brands-section" class="nav-link-part">BRANDS</a>
+          <a href="#footer-section" class="nav-link-part">CONTACT</a>
         </div>
       </div>
       <!-- =========== -->
@@ -95,6 +95,11 @@
               <label for="condition">Car Condition</label>
               <select id="condition">
                 <option>Condition</option>
+                <option>Condition</option>
+
+                <option>Condition</option>
+
+                <option>Condition</option>
               </select>
             </div>
             <div class="filter-group">
@@ -115,7 +120,7 @@
       <!-- car services -->
       <!-- =========== -->
 
-      <div class="car-service-part">
+      <div class="car-service-part" id="car-service-part-sec">
         <div class="service-card">
           <i class="fa-solid fa-car" id="service-icon"></i>
           <h3 class="service-title">Largest Dealership of Car</h3>
@@ -156,7 +161,7 @@
     <!-- Featured Car -->
     <!-- =========== -->
 
-    <div class="featured-car-sec">
+    <div class="featured-car-sec" id="featured-car-sec">
       <div class="featured-car-dis">
         <p>Checkout the Featured Cars</p>
       </div>
@@ -267,7 +272,7 @@
     <!-- client section -->
     <!-- =========== -->
 
-    <div class="client-section">
+    <div class="client-section" id="client-section">
       <h1>What Our Clients Say</h1>
       <div class="client-section-underline"></div>
       <div class="client-card">
@@ -320,7 +325,7 @@
     <!-- New-car section-->
     <!-- =========== -->
 
-    <div class="New-car-section">
+    <div class="New-car-section" id="New-car-section">
       <h2>Checkout the Latest Cars</h2>
       <h1>Newest Cars</h1>
     </div>
@@ -396,7 +401,7 @@
     <!-- brands-section -->
     <!-- =========== -->
 
-    <div class="brands-section">
+    <div class="brands-section" id="brands-section">
       <img
         alt="Acer Logo"
         height="50"
@@ -439,7 +444,7 @@
     <!-- contact us-section -->
     <!-- =========== -->
 
-    <div class="footer-section">
+    <div class="footer-section" id="footer-section">
       <div class="contact-us">
         <div class="footer-sec-part">
           <h3>CARVILLA</h3>
@@ -520,6 +525,8 @@
     <script>
       $(".slick-car").slick({
         infinite: true,
+        autoplay: true,
+        autoplaySpeed: 1500,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
